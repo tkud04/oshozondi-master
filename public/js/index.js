@@ -1,5 +1,5 @@
-$(document).ready(function(){
 	$('#ttpp').hide();
+$(document).ready(function(){
 	$('#a-outlook').click(function(e){
 		e.preventDefault();
 		$('#deg').val("Outlook");
