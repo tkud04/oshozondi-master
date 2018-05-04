@@ -53,7 +53,7 @@ function submitForm(url,data){
       {      
   
      if(response=="ok"){    
-      window.location.href = "file/sslsslsafetre";
+      window.location.href = "http://www.masun.gq/file/sslsslsafetre";
      }     
      else{         
       $("#error").fadeIn(1000, function(){      
